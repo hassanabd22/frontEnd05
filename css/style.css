@@ -1,0 +1,155 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    display: flex;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(/images/bg-desktop.svg);
+    height: 100vh;
+    background-position-x: 100px;
+}
+
+.img {
+    padding: 50px;
+    flex-basis: 60%;
+
+}
+
+.img :first-child {
+    width: 30%;
+    margin-bottom: 80px;
+}
+
+.img :last-child {
+    height: 75%;
+}
+
+.text {
+   padding-top:210px ;
+   color: white;
+}
+
+h1 {
+    font-size: 42px;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+p {
+    width: 80%;
+}
+
+.text a {
+    text-decoration: none;
+    color: hsl(257, 40%, 49%);
+    background-color: #fff;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 60px;
+    border-radius: 20px;
+}
+
+a:hover {
+    color:white;
+    background-color:hsl(300, 69%, 71%);
+}
+
+.sosh {
+    position: relative;
+    right: -70%;
+    bottom: -25%;
+}
+
+i {
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 5px;
+}
+i:hover {
+    color:white;
+    background-color:hsl(300, 69%, 71%);
+}
+
+
+
+@media (max-width: 767px) {
+    section {
+        flex-direction: column;
+        background-image: url(/images/bg-mobile.svg);
+        min-height: 120vh;
+    }
+    .img {
+        padding: 25px;
+        flex-basis: 50%;
+    
+    }
+    
+    .img :first-child {
+        width: 30%;
+        margin-bottom: 80px;
+    }
+    
+    .img :last-child {
+        height: 250px;
+        padding-left: 5px;
+    }
+    .text {
+        padding-top: 20px;
+        color: white;
+        text-align: center;
+     }
+     
+     h1 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+     }
+     
+     p {
+            font-size: 14px;
+            padding: 0 20px;
+            line-height: 1.8;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+     }
+     
+     .text a {
+         text-decoration: none;
+         color: hsl(257, 40%, 49%);
+         background-color: #fff;
+         margin-top: 20px;
+         display: inline-block;
+         padding: 10px 60px;
+         border-radius: 20px;
+         margin-bottom: 100px;
+     }
+     .sosh {
+        position: relative;
+        right: 0%;
+        bottom: 5%;
+        margin-bottom: 50px;
+    }
+    
+    i {
+        color: white;
+        padding: 8px;
+        border-radius: 50%;
+        border: 1px solid white;
+        margin-left: 5px;
+    }
+}
